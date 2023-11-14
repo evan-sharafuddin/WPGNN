@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wpgnn"
+version = "1.0.0"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "WPGNN"
+readme = "README.md"
+requires-python = ">=3.7.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "traitlets==5.13.0",
+    "dm-sonnet==2.0.0",
+    "tensorflow-probability",
+    "graph_nets==1.1.0",
+]
