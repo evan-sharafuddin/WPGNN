@@ -12,6 +12,6 @@ dependencies:
   - matplotlib
   - pip:
     - traitlets==5.13.0 # changed from forked repo: 5.0.5 -- 5.13.0
-    - dm-sonnet==2.0.0
+    - dm-sonnet==2.0.1 # changed from 2.0.0
     - tensorflow-probability
     - graph_nets==1.1.0

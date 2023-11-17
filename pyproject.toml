@@ -18,7 +18,8 @@ classifiers = [
 ]
 dependencies = [
     "traitlets==5.13.0",
-    "dm-sonnet==2.0.0",
+    "dm-sonnet==2.0.1",
     "tensorflow-probability",
     "graph_nets==1.1.0",
+    "numpy>=1.24.0"
 ]
