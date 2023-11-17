@@ -148,7 +148,7 @@ class PLayGen():
         # Randomly distrbute N_turbs turbines across N_strings strings
         #   - Each string contains at least 2 turbines and no more than 75% of the total number of turbines
         max_turbs = int(0.75*N_turbs)
-        N_turbs_per_string = 2*np.ones((N_string, ), dtype=np.int)
+        N_turbs_per_string = 2*np.ones((N_string, ), dtype=np.int_)
         count = 0
         while np.sum(N_turbs_per_string) < N_turbs:
             count += 1
@@ -163,9 +163,9 @@ class PLayGen():
         # Generate a single of turbine locations with given properties
         
         # Insert breaks into string of turbines
-        break_idx = np.ones((N_turbs, ), dtype=np.bool)
+        break_idx = np.ones((N_turbs, ), dtype=np.bool_)
         for break_i in breaks:
-            break_idx = np.insert(break_idx, np.random.randint(break_idx.size), np.zeros((break_i, ), dtype=np.bool))
+            break_idx = np.insert(break_idx, np.random.randint(break_idx.size), np.zeros((break_i, ), dtype=np.bool_))
         N_turbs = break_idx.size
         
         # Construct correlated noise array for to turbine locations
